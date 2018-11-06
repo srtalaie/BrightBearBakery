@@ -1,0 +1,25 @@
+{
+  "name": "brightbearbakery",
+  "version": "1.0.0",
+  "description": "Website for Bright Bear Bakery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srtalaie/BrightBearBakery.git"
+  },
+  "author": "Sasha Talaie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srtalaie/BrightBearBakery/issues"
+  },
+  "homepage": "https://github.com/srtalaie/BrightBearBakery#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
