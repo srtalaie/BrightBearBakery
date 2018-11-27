@@ -24,7 +24,7 @@ app.get('/about', function(req, res){
 });
 
 app.get('/menu', function(req, res){
-    res.sendFile(path.join(__dirname, "./public/index.html"));
+    res.sendFile(path.join(__dirname, "./public/menu.html"));
 });
 
 require("./routes/img-routes/img-routes.js")(app);
