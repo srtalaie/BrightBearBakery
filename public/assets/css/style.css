@@ -2,3 +2,10 @@
     font-size: .75em;
     color: grey;
 }
+
+@media only screen and (max-width: 640px) {
+    #brand-name {
+      font-size: 1.4em;
+      left: 43%;
+    }
+  }
