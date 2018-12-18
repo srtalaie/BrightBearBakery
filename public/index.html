@@ -121,12 +121,21 @@
     
     $(document).ready(function(){
         $('.sidenav').sidenav();
-    });
-
-    $(document).ready(function(){
         $('.slider').slider();
+
+        let accesToken = "446793398.b55604c.a7bc35ef13ac4b679fca73b0d4147dfb";
+        let secret = "de0517c8bb0a4170a24c1fa73ef6e190 "
+        let url = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${accesToken}&count=20AppSecret:${secret}`
+
+        $.ajax({
+            url: url,
+            method: 'GET'
+        }).then(function(response){
+            
+        });
     });
-       
+    
+
 </script>
 </body>
 </html>
