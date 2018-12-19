@@ -7,6 +7,10 @@
   margin-bottom: 20px;
 }
 
+.menu-asides{
+  margin-left: 15px;
+}
+
 @media only screen and (max-width: 640px) {
     #brand-name {
       font-size: 1.4em;
