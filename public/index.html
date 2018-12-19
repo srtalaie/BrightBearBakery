@@ -73,12 +73,17 @@
         </div>
     </div>
 
+    <div class="container">
+        <h3 class="center-align">Follow Us on Instagram!</h3>
+        <div class="insta-collage"></div>
+    </div>
+
     <!-- Footer -->
     <footer class="page-footer cyan">
         <div class="container">
             <div class="row">
                 <div class="col s4">
-                    <h4>Hours</h4>
+                    <h4 class="footer-titles">Hours</h4>
                     <ul>
                         <li>
                             Monday: CLOSED
@@ -95,14 +100,14 @@
                     </ul>
                 </div>
                 <div class="col s4">
-                    <h4>Address</h4>
+                    <h4 class="footer-titles">Address</h4>
                     <p>
                         620 Lakeville Hwy, Ste 350 <br>
                         Petaluma, CA 94954
                     </p>
                 </div>
                 <div class="col s4 right">
-                    <h4>Follow Us</h4>
+                    <h4 class="footer-titles">Follow Us</h4>
                     <a href="https://www.facebook.com/brightbearbakery/" target="_blank"><img class="responsive-img social-icons" src="/images/facebook-icon-img" width="35" height="35"></a>
                     <a href="https://www.yelp.com/biz/bright-bear-bakery-petaluma" target="_blank"><img class="responsive-img social-icons" src="/images/yelp-icon-img" width="35" height="35"></a>
                     <a href="https://www.instagram.com/brightbearbakery/" target="_blank"><img class="responsive-img social-icons" src="/images/instagram-icon-img" width="35" height="35"></a>
@@ -131,7 +136,13 @@
             url: url,
             method: 'GET'
         }).then(function(response){
-            
+            console.log(response.data);
+            let data = response.data;
+            data.forEach(pics => {
+                $('.insta-collage').append(`
+                    <a href="${pics.link}" target="_blank"><img class="responsive-img" src=${pics.images.thumbnail.url}></a>
+                `)
+            });
         });
     });
     

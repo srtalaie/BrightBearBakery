@@ -3,9 +3,22 @@
     color: grey;
 }
 
+.insta-collage{
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 640px) {
     #brand-name {
       font-size: 1.4em;
       left: 43%;
+    }
+
+    .insta-collage img {
+      height: 4em;
+      width: 4em;
+    }
+
+    .footer-titles {
+      font-size: 1.28rem;
     }
   }
